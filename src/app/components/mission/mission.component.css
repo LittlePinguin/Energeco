@@ -1,6 +1,7 @@
 .mission {
   height: 100vh;
   background-size: cover;
+  font-weight: bold;
 }
 
 .mission .container {
@@ -17,40 +18,73 @@
   position: absolute;
   top: 20%;
   left: 18%;
-  background-color: rgba(255, 255, 255, 0.8);
+  background-color: lightblue;
   width: 60%;
   height: 200px;
   padding: 40px;
   border-radius: 10px;
-  border: 5px double crimson;
-  font-weight: bold;
+  border-left: 6px solid rgb(10, 139, 182);
+  box-shadow: 57px -30px rgba(0, 128, 128, 0.9);
+  animation-name: anim;
+  animation-duration: 1s;
+}
+
+@keyframes anim {
+  0% {
+    width: 0px;
+  }
+  100% {
+    width: 60%;
+  }
 }
 
 .mission .container .text .details {
+  position: fixed;
   font-size: 24px;
+  animation-name: animtext;
+  animation-duration: 5s;
 }
 
-.mission .container .text .answers {
+@keyframes animtext {
+  0% {
+    color: transparent;
+  }
+  100% {
+    color: black;
+  }
+}
+
+.mission .container .answers {
   display: flex;
-  margin-left: 30%;
+  position: absolute;
+  left: 35%;
+  top: 55%;
 }
 
-.mission .container .text .answers .answer {
+.mission .container .answers .answer {
   margin: 20px;
   text-align: center;
-  padding: 20px;
+  padding: 15px;
   border-radius: 30px;
+  border: 1px solid white;
   cursor: pointer;
+  transition: all ease 0.2s;
 }
 
-.mission .container .text .answers .answer:hover {
-  border: 3px solid white;
+.mission .container .answers .answer:hover {
+  color: white;
+}
+.mission .container .answers .answer.one:hover {
+  background-color: rgb(21, 133, 185);
+}
+.mission .container .answers .answer.two:hover {
+  background-color: rgb(11, 167, 11);
 }
 
-.mission .container .text .answers .answer.one {
+.mission .container .answers .answer.one {
   background-color: rgb(0, 191, 255);
 }
 
-.mission .container .text .answers .answer.two {
+.mission .container .answers .answer.two {
   background-color: rgb(0, 255, 0);
 }

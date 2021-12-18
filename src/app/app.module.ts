@@ -8,11 +8,15 @@ import { AppComponent } from './app.component';
 import { HomeComponent } from './components/home/home.component';
 import { MissionComponent } from './components/mission/mission.component';
 import { MissionTwoComponent } from './components/mission-two/mission-two.component';
+import { MissionThreeComponent } from './components/mission-three/mission-three.component';
+import { MissionFourComponent } from './components/mission-four/mission-four.component';
 
 const appRoutes: Routes = [
   {path: '', component:HomeComponent},
   {path: 'mission', component:MissionComponent},
-  {path: 'missionTwo', component:MissionTwoComponent}
+  {path: 'missionTwo', component:MissionTwoComponent},
+  {path: 'missionThree', component:MissionThreeComponent},
+  {path: 'missionFour', component:MissionFourComponent}
 ]
 
 @NgModule({
@@ -20,7 +24,9 @@ const appRoutes: Routes = [
     AppComponent,
     HomeComponent,
     MissionComponent,
-    MissionTwoComponent
+    MissionTwoComponent,
+    MissionThreeComponent,
+    MissionFourComponent
   ],
   imports: [
     BrowserModule,

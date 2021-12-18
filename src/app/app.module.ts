@@ -7,17 +7,20 @@ import { Routes, RouterModule } from '@angular/router';
 import { AppComponent } from './app.component';
 import { HomeComponent } from './components/home/home.component';
 import { MissionComponent } from './components/mission/mission.component';
+import { MissionTwoComponent } from './components/mission-two/mission-two.component';
 
 const appRoutes: Routes = [
   {path: '', component:HomeComponent},
-  {path: 'mission', component:MissionComponent}
+  {path: 'mission', component:MissionComponent},
+  {path: 'missionTwo', component:MissionTwoComponent}
 ]
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
-    MissionComponent
+    MissionComponent,
+    MissionTwoComponent
   ],
   imports: [
     BrowserModule,

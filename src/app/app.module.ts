@@ -5,6 +5,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { Routes, RouterModule } from '@angular/router';
 
 import { AppComponent } from './app.component';
+import { NavbarComponent } from './components/navbar/navbar.component';
 import { HomeComponent } from './components/home/home.component';
 import { MissionComponent } from './components/mission/mission.component';
 import { MissionTwoComponent } from './components/mission-two/mission-two.component';
@@ -22,6 +23,7 @@ const appRoutes: Routes = [
 @NgModule({
   declarations: [
     AppComponent,
+    NavbarComponent,
     HomeComponent,
     MissionComponent,
     MissionTwoComponent,

@@ -30,4 +30,39 @@ export class MissionTwoComponent implements OnInit {
     localStorage.setItem("energy", finalEnergy.toString());
   }
 
+  getAvatar(): string{
+    var path = "../../../assets/images/";
+    if (Number(localStorage.getItem("witch")) == 1){
+      path+="skin-witch.png";
+    }
+    else if (Number(localStorage.getItem("redbot")) == 1){
+      path+="skin-red-bot.png";
+    }
+    else if (Number(localStorage.getItem("ninja")) == 1){
+      path+="skin-ninja.png";
+    }
+    else if (Number(localStorage.getItem("knight")) == 1){
+      path+="skin-knight.png";
+    }
+    else if (Number(localStorage.getItem("hero")) == 1){
+      path+="skin-hero.png";
+    }
+    else if (Number(localStorage.getItem("perry")) == 1){
+      path+="skin-perry.png";
+    }
+    else if (Number(localStorage.getItem("yebot")) == 1){
+      path+="skin-yellow-bot.png";
+    }
+    else if (Number(localStorage.getItem("megalo")) == 1){
+      path+="skin-megalo.png";
+    }
+    else if (Number(localStorage.getItem("spiderman")) == 1){
+      path+="skin-spooder.png";
+    }
+    else if (Number(localStorage.getItem("mystery")) == 1){
+      path+="skin-mystery.png";
+    }
+    return path;
+  }
+
 }

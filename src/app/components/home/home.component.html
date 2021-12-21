@@ -1,11 +1,12 @@
 <div class="home">
-    <p class="game-name">Energeco</p>
-    <div class="content">
-        <p class="text">
-            Vous voulez apprendre à diminuer votre 
-            <br> consommation énergétique quotidienne ?
-            <br> <br> Vous êtes au bon endroit !
-        </p>
-        <a class="button" [routerLink]="['/mission']" routerLinkActive="active" >Jouer</a>
-    </div>
+
+        <mat-card class="text">
+            Vous voulez apprendre à diminuer votre consommation <br>
+            <br>énergétique quotidienne ? <br><br><br>Vous êtes au bon endroit !
+        </mat-card>
+        <a class="playButton" [routerLink]="['/mission']" routerLinkActive="active" >
+            Play
+        </a>
+        <a class="shopButton" [routerLink]="['/shop']" routerLinkActive="active" >Shop</a>
+        <img src="../../../assets/images/original.gif" class="homeBg">
 </div>

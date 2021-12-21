@@ -1,46 +1,97 @@
+@font-face {
+ font-family: "Courgette";
+ src: local("Courgette") url('../../../assets/fonts/Courgette-Regular.ttf') format("truetype");
+}
+
+
 .home {
-  height: 100vh;
   justify-content: center;
   align-items: center;
-  background-color: lightblue;
+  background-color: #68c9f1;
 }
 
-.home .game-name {
-  font-size: 65px;
-  font-weight: bold;
-  text-align: center;
+.homeBg{
+  width: 100vw;
+  z-index: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100vh;
 }
 
-.home .content {
-  margin-left: 15%;
-  margin-top: 250px;
-  display: flex;
+.home .text {
+  font-size: 36px;
+  display: inline-block;
+  text-align-last: center;
+  box-shadow: 5px 4px 10px 0px #00000045;
+  position: absolute;
+  display: inline-block;
+  top: 5em;
+  left: 8em;
+  background: #ffffffa3;
 }
 
-.home .content .text {
-  font-size: 30px;
-  background-color: rgba(0, 0, 0, 0.2);
-  padding: 15px;
-  border: 1px solid white;
-  border-radius: 5px;
-}
-
-.home .content .button {
+.home .playButton {
   height: 50px;
-  width: 100px;
+  width: 300px;
   margin-top: 70px;
   margin-left: 300px;
-  background-color: rgb(255, 0, 0);
-  color: white;
   font-size: 30px;
-  font-weight: bold;
   text-align: center;
   padding: 10px 10px 0 10px;
-  border-radius: 30px;
-  border: 2px solid white;
   cursor: pointer;
+  text-decoration: none;
+  color: black;
+  display: inline-block;
+  position: absolute;
+  bottom: 8em;
+  left: 9em;
+  background: url("../../../assets/images/btn.png") no-repeat;
+  background-size: contain;
+  background-position: center;
+  font-family: 'Press Start 2P', cursive;
+  padding-top: 1em;
 }
 
-.home .content .button:hover {
+.home .shopButton {
+  height: 50px;
+  width: 300px;
+  margin-top: 70px;
+  margin-left: 300px;
+  font-size: 30px;
+  text-align: center;
+  padding: 10px 10px 0 10px;
+  cursor: pointer;
+  text-decoration: none;
+  color: black;
+  display: inline-block;
+  position: absolute;
+  bottom: 4em;
+  left: 9em;
+  background: url("../../../assets/images/btn.png") no-repeat;
+  background-size: contain;
+  background-position: center;
+  font-family: 'Press Start 2P', cursive;
+  padding-top: 1em;
+}
+
+.home .content .shopButton:hover {
   background-color: rgb(121, 0, 0);
+}
+
+.home .content .playButton:hover {
+  background-color: rgb(121, 0, 0);
+}
+
+
+.game-name{
+  font-family: 'Press Start 2P', cursive;
+  font-size: 2.5em;
+  font-weight: bold;
+  color : #55af55;
+  display: inline-block;
+}
+
+.navbar-item{
+  text-decoration: none;
 }

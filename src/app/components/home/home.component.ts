@@ -10,6 +10,12 @@ export class HomeComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
+    if (localStorage.getItem("coins")===null) {
+      localStorage.setItem("coins","0");
+    }
+    if (localStorage.getItem("energy")===null) {
+      localStorage.setItem("energy","5");
+    }
   }
 
 }

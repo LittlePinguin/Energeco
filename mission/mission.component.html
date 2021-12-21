@@ -1,0 +1,21 @@
+<div class="mission" style="background-image: url('../../../assets/images/kitchen.jpg');">
+    <div class="container">
+        <img src="../../../assets/images/avatar.png" alt="" class="avatar">
+        <div class="text">
+            <div class="details">Il est 22h, il fait nuit. <br>
+                Vous êtes dans le salon mais vous faîtes régulièrement des aller-retours
+                vers la cuisine. <br> <br> Vaut-il mieux éteindre et rallumer la lumière de la cuisine
+                chaque fois que vous y allez <br> ou la laisser allumée et ne l'éteindre que quand
+                vous êtes certain de ne plus y revenir ?
+            </div>
+        </div>
+        <div class="answers">
+            <a [routerLink]="['/missionTwo']" routerLinkActive="active" >
+                <p class="answer one" (click)="reward(1)">Laisser allumé</p>
+            </a>
+            <a [routerLink]="['/missionTwo']" routerLinkActive="active" >
+                <p class="answer two" (click)="reward(0)">Eteindre et rallumer</p>
+            </a>
+        </div>
+    </div>
+</div>

@@ -14,7 +14,7 @@ import { MissionFourComponent } from './components/mission-four/mission-four.com
 import { MissionFiveComponent } from './components/mission-five/mission-five.component';
 import { MissionSixComponent } from './components/mission-six/mission-six.component';
 import { MissionSevenComponent } from './components/mission-seven/mission-seven.component';
-import { MissionEightComponent } from './components/mission-eight/mission-height.component';
+import { MissionEightComponent } from './components/mission-eight/mission-eight.component';
 
 const appRoutes: Routes = [
   {path: '', component:HomeComponent},

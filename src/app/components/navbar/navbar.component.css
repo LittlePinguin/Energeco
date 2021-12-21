@@ -1,7 +1,10 @@
 .navbar {
   background-color: #051b24;
   box-shadow: 0px 1px 9px 3px #000000bf;
-  position: relative;
+  position: fixed;
+  z-index: 200;
+  width: 100vw;
+height: 10vh;
 }
 
 .navbarLogo{

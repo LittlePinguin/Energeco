@@ -20,15 +20,16 @@
 }
 
 .home .text {
-  font-size: 36px;
+  font-size: 23px;
   display: inline-block;
   text-align-last: center;
   box-shadow: 5px 4px 10px 0px #00000045;
   position: absolute;
   display: inline-block;
-  top: 5em;
-  left: 8em;
+  top: 7em;
+  left: 7em;
   background: #ffffffa3;
+  font-family: 'Press Start 2P', cursive;
 }
 
 .home .playButton {
@@ -73,6 +74,34 @@
   background-position: center;
   font-family: 'Press Start 2P', cursive;
   padding-top: 1em;
+}
+
+.home .playButton:hover {
+  background: url("../../../assets/images/btn-hover.png") no-repeat;
+  background-size: contain;
+  background-position: center;
+  color: white;
+}
+
+.home .playButton:focus {
+  background: url("../../../assets/images/btn-clicked.png") no-repeat;
+  background-size: contain;
+  background-position: center;
+  color: white;
+}
+
+.home .shopButton:hover {
+  background: url("../../../assets/images/btn-hover.png") no-repeat;
+  background-size: contain;
+  background-position: center;
+  color: white;
+}
+
+.home .shopButton:focus {
+  background: url("../../../assets/images/btn-clicked.png") no-repeat;
+  background-size: contain;
+  background-position: center;
+  color: white;
 }
 
 .home .content .shopButton:hover {

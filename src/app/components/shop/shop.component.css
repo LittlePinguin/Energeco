@@ -5,6 +5,11 @@
   background-color: #68c9f1;
 }
 
+.shopBg{
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+}
 
 .game-name{
   font-family: 'Courgette', cursive;
@@ -16,9 +21,11 @@
 
 
 .shopCards{
-  width: 25em;
-  height: 25em;
-  margin: 3em;
+  left: 4em;
+  top: 7em;
+  width: 15em;
+  height: 15em;
+  margin: 1em;
   display: inline-block;
   text-align-last: center;
   box-shadow: 5px 4px 10px 0px #00000045;
@@ -40,12 +47,44 @@
 .homeButton{
   text-decoration: none;
   color: black;
-  border: 1px solid;
   display: inline-block;
   position: absolute;
-  bottom: 5em;
-  left: 47em;
-  width: 5em;
+  bottom: 0;
+  right: 0.5em;
+  width: 59px;
+  height: 50px;
   text-align: center;
   cursor: pointer;
+  background: url("../../../assets/images/back-btn.png") no-repeat;
+  background-size: contain;
+  background-position: center;
+  font-family: 'Press Start 2P', cursive;
+  font-size: 30px;
+  padding-top: 1em;
+}
+
+.homeButton:hover{
+  background: url("../../../assets/images/back-btn-hover.png") no-repeat;
+  background-size: contain;
+  background-position: center;
+  color: white;
+}
+
+.homeButton:focus{
+  background: url("../../../assets/images/back-btn-clicked.png") no-repeat;
+  background-size: contain;
+  background-position: center;
+  color: white;
+}
+
+.cardContainer{
+  width: 216px;
+  height: 182px;
+}
+
+.coinBooster-img{
+  height: 52%;
+  padding-top: 20%;
+  padding-bottom: 20%;
+  width: 52%;
 }

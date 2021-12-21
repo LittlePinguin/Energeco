@@ -39,4 +39,7 @@ export class NavbarComponent implements OnInit {
     return localStorage.getItem("coins")!;
   }
 
+  getAvatar(): string {
+    return localStorage.getItem("avatar") ?? 'coinBooster.png';
+  }
 }

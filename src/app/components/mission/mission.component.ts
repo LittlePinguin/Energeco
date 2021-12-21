@@ -1,5 +1,6 @@
 import { isNull } from '@angular/compiler/src/output/output_ast';
 import { Component, OnInit } from '@angular/core';
+import { NavbarComponent } from '../navbar/navbar.component';
 
 @Component({
   selector: 'app-mission',
@@ -12,11 +13,22 @@ export class MissionComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  // increment coins
-  reward(coins: number){
-    const currentCoins = localStorage.getItem("coins");
-    const final = Number(currentCoins)!+coins;
-    localStorage.setItem("coins", final.toString());
+  // increment coins and energy
+  reward(coins: number, energy: number){
+    var currentCoins = localStorage.getItem("coins");
+    var finalCoins = Number(currentCoins)!+coins;
+    if (finalCoins < 0){
+      finalCoins = 0;
+    }
+    localStorage.setItem("coins", finalCoins.toString());
+    
+    var currentEnergy = localStorage.getItem("energy");
+    var finalEnergy = Number(currentEnergy)+energy;
+    if (finalEnergy > 100){
+      finalEnergy = 100;
+      localStorage.setItem("robot", "1");
+    }
+    localStorage.setItem("energy", finalEnergy.toString());
   }
 
 }

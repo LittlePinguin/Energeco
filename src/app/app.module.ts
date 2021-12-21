@@ -4,6 +4,9 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { Routes, RouterModule } from '@angular/router';
 
+import { MatCardModule } from '@angular/material/card';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+
 import { AppComponent } from './app.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { HomeComponent } from './components/home/home.component';
@@ -16,7 +19,6 @@ import { MissionSixComponent } from './components/mission-six/mission-six.compon
 import { MissionSevenComponent } from './components/mission-seven/mission-seven.component';
 import { MissionEightComponent } from './components/mission-eight/mission-eight.component';
 import { ShopComponent } from './components/shop/shop.component';
-import {MatCardModule} from '@angular/material/card';
 
 const appRoutes: Routes = [
   {path: '', component:HomeComponent},
@@ -27,7 +29,7 @@ const appRoutes: Routes = [
   {path: 'missionFive', component:MissionFiveComponent},
   {path: 'missionSix', component:MissionSixComponent},
   {path: 'missionSeven', component:MissionSevenComponent},
-  {path: 'shop', component:ShopComponent},
+  {path: 'shop', component:ShopComponent}
 ]
 
 @NgModule({
@@ -48,8 +50,9 @@ const appRoutes: Routes = [
   imports: [
     BrowserModule,
     AppRoutingModule,
+    RouterModule.forRoot(appRoutes),
     MatCardModule,
-    RouterModule.forRoot(appRoutes)
+    BrowserAnimationsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

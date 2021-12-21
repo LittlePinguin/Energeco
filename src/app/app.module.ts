@@ -25,7 +25,6 @@ const appRoutes: Routes = [
   {path: 'missionFive', component:MissionFiveComponent},
   {path: 'missionSix', component:MissionSixComponent},
   {path: 'missionSeven', component:MissionSevenComponent},
-  {path: 'missionEight', component:MissionEightComponent},
 ]
 
 @NgModule({
@@ -40,7 +39,7 @@ const appRoutes: Routes = [
     MissionFiveComponent,
     MissionSixComponent,
     MissionSevenComponent,
-    MissionHeightComponent
+    MissionEightComponent,
   ],
   imports: [
     BrowserModule,

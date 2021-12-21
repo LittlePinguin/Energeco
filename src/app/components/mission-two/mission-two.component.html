@@ -3,16 +3,16 @@
         <img src="../../../assets/images/avatar.png" alt="" class="avatar">
         <div class="text">
             <div class="details">Nous sommes en hiver. Vous devez quitter votre domicile. <br> <br>
-                2 choix s'offrent à vous pour conservez la chaleur : <br>
-                Laisser le chauffage en mode éco (la température la
-                plus basse) ou l'éteindre complètement ?
+                2 choix s'offrent à vous pour conserver la chaleur : <br>
+                - Laisser le chauffage à la température la
+                plus basse <br> - L'éteindre complètement ?
             </div>
         </div>
         <div class="answers">
             <a [routerLink]="['/missionThree']" routerLinkActive="active" >
-                <p class="answer one">Laisser allumé</p>
+                <p class="answer one" (click)="reward(50, 20)">Laisser allumé</p>
             </a>
-            <p class="answer two">Eteindre</p>
+            <p class="answer two" (click)="reward(0, -30)">Eteindre</p>
         </div>
     </div>
 </div>

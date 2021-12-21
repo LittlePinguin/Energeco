@@ -1,0 +1,18 @@
+<div class="mission" style="background-image: url('../../../assets/images/kitchen.jpg');">
+    <div class="container">
+        <img src="../../../assets/images/avatar.png" alt="" class="avatar">
+        <div class="text">
+            <div class="details">A votre avis, la consommation de votre réfrégirateur <br>
+                varie t-elle selon si il est plus ou moins rempli ?
+            </div>
+        </div>
+        <div class="answers">
+            <a [routerLink]="['/missionSix']" routerLinkActive="active" >
+                <p class="answer one" (click)="reward(15, 30)">Oui</p>
+            </a>
+            <a [routerLink]="['/missionSix']" routerLinkActive="active" >
+                <p class="answer two" (click)="reward(0, -20)">Non</p>
+            </a>
+        </div>
+    </div>
+</div>

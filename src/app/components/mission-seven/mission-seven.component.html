@@ -1,0 +1,18 @@
+<div class="mission" style="background-image: url('../../../assets/images/kitchen.jpg');">
+    <div class="container">
+        <img src="../../../assets/images/avatar.png" alt="" class="avatar">
+        <div class="text">
+            <div class="details">Selon vous, couvrir vos casseroles lorsque vous <br>
+                y faîtes cuire quelque chose, permet-il de réduire la consommation d'énergie ?
+            </div>
+        </div>
+        <div class="answers">
+            <a [routerLink]="['/missionHeight']" routerLinkActive="active" >
+                <p class="answer one" (click)="reward(5, 5)">Oui</p>
+            </a>
+            <a [routerLink]="['/missionHeight']" routerLinkActive="active" >
+                <p class="answer two" (click)="reward(0, -5)">Non</p>
+            </a>
+        </div>
+    </div>
+</div>

@@ -5,12 +5,12 @@
 }
 
 .mission {
-  height: 100vh;
+  height: 89vh;
   background-size: cover;
   font-weight: bold;
 }
 
-a {
+.mission a {
   text-decoration: none;
   color: black;
 }
@@ -35,7 +35,7 @@ a {
   padding: 40px;
   border-radius: 10px;
   border-left: 6px solid rgb(10, 139, 182);
-  box-shadow: 57px -30px rgba(0, 128, 128, 0.9);
+  box-shadow: 57px -30px rgba(0, 128, 128, 0.7);
   animation-name: anim;
   animation-duration: 1s;
 }
@@ -53,7 +53,11 @@ a {
   position: fixed;
   font-size: 24px;
   animation-name: animtext;
-  animation-duration: 5s;
+  animation-duration: 3s;
+}
+
+.mission .container .text .details span {
+  font-style: italic;
 }
 
 @keyframes animtext {
@@ -70,14 +74,17 @@ a {
   position: absolute;
   left: 35%;
   top: 55%;
+  background-color: rgba(173, 216, 230, 0.7);
+  border-radius: 3px;
 }
 
 .mission .container .answers .answer {
   margin: 20px;
   text-align: center;
   padding: 15px;
-  border-radius: 30px;
-  border: 1px solid white;
+  clip-path: polygon(50% 0%, 100% 0, 100% 84%, 84% 100%, 0 100%, 0 16%, 16% 0);
+  border: 3px solid white;
+  border-radius: 4px;
   cursor: pointer;
   transition: all ease 0.2s;
 }

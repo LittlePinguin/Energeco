@@ -1,15 +1,16 @@
 <nav class="navbar" role="navigation" aria-label="main navigation">
+    {{refresh()}}
     <div class="navbar-brand">
         <a class="navbar-item" href="#">
-            <img src="../../../assets/images/navbar-icon-bis.png" width="40em">
+            <img src="../../../assets/images/navbar-icon-bis.png" alt="Bulma: Free, open source, and modern CSS framework based on Flexbox" width="40em">
               <p class="game-name">Energeco</p>
         </a>
         <div class="score">
             <div class="energy-border">
-                <div class="energy-level"></div>
+                <div class="energy-level" id="elevel"></div>
             </div>
             <div class="coins">
-                <p>2</p>
+                <p>{{getCoins()}}</p>
                 <img src="../../../assets/images/coins-icon.png" alt="">
             </div>
         </div>

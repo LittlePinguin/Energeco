@@ -88,3 +88,10 @@
   padding-bottom: 20%;
   width: 52%;
 }
+
+mat-card{
+  background-color: wheat;
+}
+.buyButton {
+  cursor: pointer;
+}

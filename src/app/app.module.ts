@@ -15,6 +15,8 @@ import { MissionFiveComponent } from './components/mission-five/mission-five.com
 import { MissionSixComponent } from './components/mission-six/mission-six.component';
 import { MissionSevenComponent } from './components/mission-seven/mission-seven.component';
 import { MissionEightComponent } from './components/mission-eight/mission-eight.component';
+import { ShopComponent } from './components/shop/shop.component';
+import {MatCardModule} from '@angular/material/card';
 
 const appRoutes: Routes = [
   {path: '', component:HomeComponent},
@@ -25,6 +27,7 @@ const appRoutes: Routes = [
   {path: 'missionFive', component:MissionFiveComponent},
   {path: 'missionSix', component:MissionSixComponent},
   {path: 'missionSeven', component:MissionSevenComponent},
+  {path: 'shop', component:ShopComponent},
 ]
 
 @NgModule({
@@ -40,10 +43,12 @@ const appRoutes: Routes = [
     MissionSixComponent,
     MissionSevenComponent,
     MissionEightComponent,
+    ShopComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
+    MatCardModule,
     RouterModule.forRoot(appRoutes)
   ],
   providers: [],

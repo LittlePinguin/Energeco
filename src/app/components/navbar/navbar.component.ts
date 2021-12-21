@@ -14,6 +14,7 @@ export class NavbarComponent implements OnInit {
     var energy = Number(localStorage.getItem("energy"));
     if (energy == null){
       localStorage.setItem("energy", "50");
+      energy = 50;
     }
     if (energy < 30){
       document.getElementById("elevel")!.style.backgroundColor= "red"

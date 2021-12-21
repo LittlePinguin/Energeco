@@ -14,7 +14,7 @@ import { MissionFourComponent } from './components/mission-four/mission-four.com
 import { MissionFiveComponent } from './components/mission-five/mission-five.component';
 import { MissionSixComponent } from './components/mission-six/mission-six.component';
 import { MissionSevenComponent } from './components/mission-seven/mission-seven.component';
-import { MissionHeightComponent } from './components/mission-height/mission-height.component';
+import { MissionEightComponent } from './components/mission-eight/mission-height.component';
 
 const appRoutes: Routes = [
   {path: '', component:HomeComponent},
@@ -25,7 +25,7 @@ const appRoutes: Routes = [
   {path: 'missionFive', component:MissionFiveComponent},
   {path: 'missionSix', component:MissionSixComponent},
   {path: 'missionSeven', component:MissionSevenComponent},
-  {path: 'missionHeight', component:MissionHeightComponent},
+  {path: 'missionEight', component:MissionEightComponent},
 ]
 
 @NgModule({

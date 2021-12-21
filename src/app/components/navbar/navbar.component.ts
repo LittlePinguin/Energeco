@@ -10,6 +10,10 @@ export class NavbarComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
+    var energy = Number(localStorage.getItem("energy"));
+    if (energy === null){
+      localStorage.setItem("energy", "5");
+    }
   }
 
 }

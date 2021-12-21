@@ -11,10 +11,10 @@
         </div>
         <div class="answers">
             <a [routerLink]="['/missionFive']" routerLinkActive="active" >
-                <p class="answer one">Demi-charge</p>
+                <p class="answer one" (click)="reward(0, -20)">Demi-charge</p>
             </a>
             <a [routerLink]="['/missionFive']" routerLinkActive="active" >
-                <p class="answer two">Charge complète</p>
+                <p class="answer two" (click)="reward(40, 20)">Charge complète</p>
             </a>
         </div>
     </div>

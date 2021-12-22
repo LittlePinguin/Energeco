@@ -1,19 +1,33 @@
-<div class="mission" style="background-image: url('../../../assets/images/kitchen.jpg');">
+<div class="mission">
+  <img src="../../../assets/images/Tv.gif" class="Bg">
     <div class="container">
-        <img src="../../../assets/images/avatar.png" alt="" class="avatar">
-        <div class="text">
-            <div class="details">Il est 9h en plein hiver et vous devez partir, mais le soleil rayonne aujourd'hui. <br> <br>
-                Vous préférez : <br>
-               Ouvrir vos vollets et laisser le soleil chauffer la pièce <br>
-                Ou fermer les vollets et laisser le chauffage en route <br> 
+        <img [src]="getAvatar()" alt="" class="avatar">
+        <div class="text2">
+            <div class="details"><br><br>Vous venez de finir de regarder votre film. <br><br>
+                Mais vous savez que vous utiliserez encore votre télévision ou votre ordinateur
+                d'ici moins de 2h.<br><br> Quelle la meilleure attitude : <br><br>
+                - Eteindre la télévision/ordinateur puis le rallumer lorsque vous en aurez besoin. <br><br>
+                - Laisser la télévision/ordinateur en mode veille.
             </div>
         </div>
         <div class="answers">
-            <a [routerLink]="['/missionSeven']" routerLinkActive="active" >
-                <p class="answer one">Vollets ouvert</p>
+            <a>
+                <p class="answer one" (click)="reward(20, 20)">Eteindre</p>
             </a>
-            <a [routerLink]="['/missionSeven']" routerLinkActive="active" >
-                <p class="answer two">Vollets fermés</p>
+            <a>
+                <p class="answer two" (click)="reward(0, -20)">Mode veille</p>
+            </a>
+        </div>
+    </div>
+    <div class="modal" id="modal">
+        <div class="box">
+            <div class="text">
+                <h1>Information</h1>
+                Le mode veille des écrands consomme énormément et les laisser allumés aussi. <br>
+                Il vaut donc mieux éteindre l'appareil puis le rallumer lorsqu'on on a besoin.
+            </div>
+            <a [routerLink]="['']" routerLinkActive="active" >
+                <p class="btn-next">Home</p>
             </a>
         </div>
     </div>

@@ -1,0 +1,8 @@
+
+.mission .container .answers2 {
+  display: flex;
+  position: absolute;
+  left: 40em;
+  top: 12em;
+  border-radius: 3px;
+}

@@ -5,46 +5,64 @@
   background-color: #68c9f1;
 }
 
-.shopBg{
+.shopBg {
   width: 100vw;
   height: 100vh;
   position: fixed;
 }
 
-.game-name{
-  font-family: 'Courgette', cursive;
+.game-name {
+  font-family: "Courgette", cursive;
   font-size: 2.5em;
   font-weight: bold;
-  color : #55af55;
+  color: #55af55;
   display: inline-block;
 }
 
-
-.shopCards{
+.shopCards {
   left: 4em;
   top: 7em;
-  width: 15em;
+  width: 13em;
   height: 15em;
   margin: 1em;
   display: inline-block;
   text-align-last: center;
   box-shadow: 5px 4px 10px 0px #00000045;
+  background-color: rgba(255, 255, 255, 0.8);
 }
 
-.buyButton{
-  bottom: 3em;
+.skin-name {
+  font-weight: bold;
+  border: 1px solid black;
+  border-radius: 10px;
+  background-color: rgb(128, 212, 240);
+  margin-left: 20px;
+}
+
+.skin-name.mystery {
+  margin-left: 10px;
+}
+
+.buyButton {
+  bottom: 1.5em;
   display: inline-block;
   position: absolute;
   border: 1px solid;
+  background-color: rgb(255, 230, 0);
   padding-right: 1.5em;
   padding-left: 1.5em;
-  left: 11.5em;
+  left: 6em;
   color: black;
   text-decoration: none;
   cursor: pointer;
 }
 
-.homeButton{
+.buyButton:hover {
+  color: white;
+  background-color: rgb(136, 125, 0);
+}
+
+.homeButton {
   text-decoration: none;
   color: black;
   display: inline-block;
@@ -58,31 +76,31 @@
   background: url("../../../assets/images/back-btn.png") no-repeat;
   background-size: contain;
   background-position: center;
-  font-family: 'Press Start 2P', cursive;
+  font-family: "Press Start 2P", cursive;
   font-size: 30px;
   padding-top: 1em;
 }
 
-.homeButton:hover{
+.homeButton:hover {
   background: url("../../../assets/images/back-btn-hover.png") no-repeat;
   background-size: contain;
   background-position: center;
   color: white;
 }
 
-.homeButton:focus{
+.homeButton:focus {
   background: url("../../../assets/images/back-btn-clicked.png") no-repeat;
   background-size: contain;
   background-position: center;
   color: white;
 }
 
-.cardContainer{
+.cardContainer {
   width: 216px;
   height: 182px;
 }
 
-.coinBooster-img{
+.coinBooster-img {
   height: 52%;
   padding-top: 20%;
   padding-bottom: 20%;

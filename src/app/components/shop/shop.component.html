@@ -3,84 +3,28 @@
     <img src="../../../assets/images/shop2.gif" class="shopBg">
     <mat-card class="shopCards">
       <div class="cardContainer">
-        <img src="../../assets/images/skin-mystery.png" class="myster" height="100%">
-        <div class="shopPrice">
-          prix$$
+        <img src="../../../assets/images/skin-red-bot.png" height="100%">
+        <div class="skin-name">
+          Redbot
         </div>
       </div>
-      <a href="http://localhost:4200/shop">
+      <a href="http://localhost:4200/shop" (click)="buy(0, 'redbot')">
         <div class="buyButton">
-          Buy
+          {{getSkin('redbot') == 0 ? 'défaut' : 'choisi' }}
         </div>
       </a>
     </mat-card>
 
     <mat-card class="shopCards">
       <div class="cardContainer">
-        <img src="../../assets/images/skin-hero.png" class="hero" height="100%">
-        <div class="shopPrice">
-          prix$$
+        <img src="../../assets/images/skin-witch.png" class="redbot" height="100%">
+        <div class="skin-name">
+          Sorcière
         </div>
       </div>
-      <a href="http://localhost:4200/shop">
+      <a href="http://localhost:4200/shop" (click)="buy(100, 'witch')">
         <div class="buyButton">
-          Buy
-        </div>
-      </a>
-    </mat-card>
-
-    <mat-card class="shopCards">
-      <div class="cardContainer">
-        <img src="../../assets/images/skin-megalo.png" class="megalo" height="100%">
-        <div class="shopPrice">
-          prix$$
-        </div>
-      </div>
-      <a href="http://localhost:4200/shop">
-        <div class="buyButton">
-          Buy
-        </div>
-      </a>
-    </mat-card>
-
-    <mat-card class="shopCards">
-      <div class="cardContainer">
-        <img src="../../assets/images/skin-spooder.png" class="spooder" height="100%">
-        <div class="shopPrice">
-          prix$$
-        </div>
-      </div>
-      <a href="http://localhost:4200/shop">
-        <div class="buyButton">
-          Buy
-        </div>
-      </a>
-    </mat-card>
-
-    <mat-card class="shopCards">
-      <div class="cardContainer">
-        <img src="../../assets/images/skin-knight.png" class="knight" height="100%">
-        <div class="shopPrice">
-          prix$$
-        </div>
-      </div>
-      <a href="http://localhost:4200/shop">
-        <div class="buyButton">
-          Buy
-        </div>
-      </a>
-    </mat-card>
-
-    <mat-card class="shopCards">
-      <div class="cardContainer">
-        <img src="../../assets/images/skin-perry.png" class="perry" height="100%">
-        <div class="shopPrice">
-          prix$$
-        </div>
-      </div>
-      <a href="http://localhost:4200/shop">
-        <div class="buyButton">
-          Buy
+          {{getSkin('witch') == 0 ? 'acheté' : (getSkin('witch') == 1 ? 'choisi' : '100$')}}
         </div>
       </a>
     </mat-card>
@@ -88,57 +32,108 @@
     <mat-card class="shopCards">
       <div class="cardContainer">
         <img src="../../assets/images/skin-ninja.png" class="ninja" height="100%">
-        <div class="shopPrice">
-          prix$$
+        <div class="skin-name">
+          Ninja
         </div>
       </div>
-      <a href="http://localhost:4200/shop">
+      <a href="http://localhost:4200/shop" (click)="buy(150, 'ninja')">
         <div class="buyButton">
-          Buy
+          {{getSkin('ninja') == 0 ? 'acheté' : (getSkin('ninja') == 1 ? 'choisi' : '150$')}}
         </div>
       </a>
     </mat-card>
 
     <mat-card class="shopCards">
       <div class="cardContainer">
-        <img src="../../assets/images/skin-red-bot.png" class="redbot" height="100%">
-        <div class="shopPrice">
-          prix$$
+        <img src="../../assets/images/skin-knight.png" class="knight" height="100%">
+        <div class="skin-name">
+          Knight
         </div>
       </div>
-      <a href="http://localhost:4200/shop">
+      <a href="http://localhost:4200/shop" (click)="buy(200, 'knight')">
         <div class="buyButton">
-          Buy
+          {{getSkin('knight') == 0 ? 'acheté' : (getSkin('knight') == 1 ? 'choisi' : '200$')}}
         </div>
       </a>
     </mat-card>
 
     <mat-card class="shopCards">
       <div class="cardContainer">
-        <img src="../../assets/images/skin-witch.png" class="witch" height="100%">
-        <div class="shopPrice">
-          prix$$
+        <img src="../../assets/images/skin-hero.png" class="hero" height="100%">
+        <div class="skin-name">
+          Rehero
         </div>
       </div>
-      <a href="http://localhost:4200/shop">
+      <a href="http://localhost:4200/shop" (click)="buy(250, 'hero')">
         <div class="buyButton">
-          Buy
+          {{getSkin('hero') == 0 ? 'acheté' : (getSkin('hero') == 1 ? 'choisi' : '250$')}}
         </div>
       </a>
     </mat-card>
 
     <mat-card class="shopCards">
       <div class="cardContainer">
-        <img src="../../assets/images/skin-yellow-bot.png" class="yellowbot" height="100%">
-        <div class="shopPrice">
-          prix$$
+        <img src="../../assets/images/skin-perry.png" class="perry" height="100%">
+        <div class="skin-name">
+          Perry
         </div>
       </div>
-      <a href="http://localhost:4200/shop">
+      <a href="http://localhost:4200/shop" (click)="buy(300, 'perry')">
         <div class="buyButton">
-          Buy
+          {{getSkin('perry') == 0 ? 'acheté' : (getSkin('perry') == 1 ? 'choisi' : '300$')}}
         </div>
       </a>
+    </mat-card>
+
+    <mat-card class="shopCards">
+      <div class="cardContainer">
+        <img src="../../assets/images/skin-yellow-bot.png" class="witch" height="100%">
+        <div class="skin-name">
+          Yebot
+        </div>
+      </div>
+      <a href="http://localhost:4200/shop" (click)="buy(350, 'yebot')">
+        <div class="buyButton">
+          {{getSkin('yebot') == 0 ? 'acheté' : (getSkin('yebot') == 1 ? 'choisi' : '350$')}}
+        </div>
+      </a>
+    </mat-card>
+
+    <mat-card class="shopCards">
+      <div class="cardContainer">
+        <img src="../../assets/images/skin-megalo.png" class="megalo" height="100%">
+        <div class="skin-name">
+          Megalovania
+        </div>
+      </div>
+      <a href="http://localhost:4200/shop" (click)="buy(400, 'megalo')">
+        <div class="buyButton">
+          {{getSkin('megalo') == 0 ? 'acheté' : (getSkin('megalo') == 1 ? 'choisi' : '400$')}}
+        </div>
+      </a>
+    </mat-card>
+
+    <mat-card class="shopCards">
+      <div class="cardContainer">
+        <img src="../../assets/images/skin-spooder.png" class="spooder" height="100%">
+        <div class="skin-name">
+          Spiderman
+        </div>
+      </div>
+      <a href="http://localhost:4200/shop" (click)="buy(450, 'spiderman')">
+        <div class="buyButton">
+          {{getSkin('spiderman') == 0 ? 'acheté' : (getSkin('spiderman') == 1 ? 'choisi' : '450$')}}
+        </div>
+      </a>
+    </mat-card>
+
+    <mat-card class="shopCards">
+      <div class="cardContainer">
+        <img src="../../assets/images/skin-mystery.png" class="mystery" height="89%">
+        <div class="skin-name mystery">
+          Skin Mystery <br> <span style="font-style: italic;">Débloqué avec 100% énergie.</span>
+        </div>
+      </div>
     </mat-card>
 
 

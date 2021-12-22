@@ -17,12 +17,21 @@ export class ShopComponent implements OnInit {
     if (skinName == null){
       var coins = Number(localStorage.getItem("coins"));
       if (coins < price){
-        alert("Vous n'avez pas assez de pièces pour acheter ce personnage.");
+        alert("Vous n'avez pas assez de pièces pour acheter ce personnage :'(.");
       }
       else{
         var coinsLeft = coins - price;
         localStorage.setItem("coins", coinsLeft.toString());
-        localStorage.setItem(skin, "0");
+        if(skin == "mystery"){
+          if (Number(localStorage.getItem("debloque")) == 1){
+            if (Number(localStorage.getItem("mystery")) == 0){
+              localStorage.setItem(skin, "1");
+            }
+          }
+        }
+        else{
+          localStorage.setItem(skin, "0");
+        }
       }
     }
     else if(Number(skinName) == 0){
@@ -56,7 +65,17 @@ export class ShopComponent implements OnInit {
       else if (Number(localStorage.getItem("mystery")) == 1){
         localStorage.setItem("mystery", "0");
       }
-      localStorage.setItem(skin, "1");
+
+      if(skin == "mystery"){
+        if (Number(localStorage.getItem("debloque")) == 1){
+          if (Number(localStorage.getItem("mystery")) == 0){
+            localStorage.setItem("mystery", "1");
+          }
+        }
+      }
+      else{
+        localStorage.setItem(skin, "1");
+      }
     }
   }
 

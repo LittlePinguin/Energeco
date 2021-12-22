@@ -134,6 +134,11 @@
           Skin Mystery <br> <span style="font-style: italic;">Débloqué avec 100% énergie.</span>
         </div>
       </div>
+      <a href="http://localhost:4200/shop" (click)="buy(0, 'mystery')">
+        <div class="buyButton">
+          {{getSkin('mystery') == 0 ? 'debloque' : (getSkin('mystery') == 1 ? 'choisi' : 'bloqué')}}
+        </div>
+      </a>
     </mat-card>
 
 

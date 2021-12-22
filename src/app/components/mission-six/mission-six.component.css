@@ -1,0 +1,24 @@
+.mission2{
+  height: 89vh;
+  background-size: cover;
+  font-weight: bold;
+  background-color: #272b42;
+  height: 100vh;
+}
+
+.Bg1{
+  width: 66vw;
+  height: 68vh;
+  top: 13em;
+  left: 19em;
+  position: fixed;
+}
+
+.answers2{
+  top: 19em !important;
+}
+
+.text{
+  padding-left: 2em;
+  border-radius: 5px;
+}

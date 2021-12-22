@@ -1,0 +1,34 @@
+<div class="mission mission2">
+  <img src="../../../assets/images/freezer.gif" class="Bg1">
+    <div class="container">
+        <img [src]="getAvatar()" alt="" class="avatar">
+        <div class="text">
+            <div class="details"><br>En ouvrant votre congélateur, vous vous rendez compte <br>
+                qu'il est rempli de givre. <br><br>
+                Est-il préférable de : <br><br>
+                - Retirer le givre car cela augmente la consommation du congélateur. <br><br>
+                - Au contraire, le laisser car cela permet de garder la fraîcheur du congélateur et d'ainsi consommer moins ?
+            </div>
+        </div>
+        <div class="answers answers2">
+            <a>
+                <p class="answer one" (click)="reward(5, 5)">Retirer le givre</p>
+            </a>
+            <a>
+                <p class="answer two" (click)="reward(0, -10)">Laisser le givre</p>
+            </a>
+        </div>
+    </div>
+    <div class="modal" id="modal">
+        <div class="box">
+            <div class="text">
+                <h1>Information</h1>
+                Lorsqu'il y a du givre dans votre congélateur, ce dernier consommera plus.<br>
+                Il faut donc penser à régulièrement le dégivrer.
+            </div>
+            <a [routerLink]="['/missionSeven']" routerLinkActive="active" >
+                <p class="btn-next">Suivant</p>
+            </a>
+        </div>
+    </div>
+</div>

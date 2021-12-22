@@ -26,7 +26,9 @@ export class HomeComponent implements OnInit {
                 if (Number(localStorage.getItem("yebot")) != 1){
                   if (Number(localStorage.getItem("megalo")) != 1){
                     if (Number(localStorage.getItem("spiderman")) != 1){
-                      localStorage.setItem("redbot", "1");
+                      if (Number(localStorage.getItem("mystery")) != 1){
+                        localStorage.setItem("redbot", "1");
+                      }
                     }
                   }
                 }

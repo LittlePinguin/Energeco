@@ -16,6 +16,10 @@ import { NavbarComponent } from './components/navbar/navbar.component';
 import { MissionTwoComponent } from './components/mission-two/mission-two.component';
 import { MissionThreeComponent } from './components/mission-three/mission-three.component';
 import { MissionFourComponent } from './components/mission-four/mission-four.component';
+import { MissionFiveComponent } from './components/mission-five/mission-five.component';
+import { MissionSixComponent } from './components/mission-six/mission-six.component';
+import { MissionSevenComponent } from './components/mission-seven/mission-seven.component';
+import { MissionEightComponent } from './components/mission-eight/mission-eight.component';
 
 
 const appRoutes: Routes = [
@@ -24,7 +28,12 @@ const appRoutes: Routes = [
   {path: 'shop', component:ShopComponent},
   {path: 'missionTwo', component:MissionTwoComponent},
   {path: 'missionThree', component:MissionThreeComponent},
-  {path: 'missionFour', component:MissionFourComponent}
+  {path: 'missionFour', component:MissionFourComponent},
+  {path: 'missionFive', component:MissionFiveComponent},
+  {path: 'missionSix', component:MissionSixComponent},
+  {path: 'missionSeven', component:MissionSevenComponent},
+  {path: 'missionEight', component:MissionEightComponent},
+  {path: 'shop', component:ShopComponent}
 ]
 
 @NgModule({
@@ -36,7 +45,12 @@ const appRoutes: Routes = [
     NavbarComponent,
     MissionTwoComponent,
     MissionThreeComponent,
-    MissionFourComponent
+    MissionFourComponent,
+    MissionFiveComponent,
+    MissionSixComponent,
+    MissionSevenComponent,
+    MissionEightComponent,
+    ShopComponent,
   ],
   imports: [
     BrowserModule,

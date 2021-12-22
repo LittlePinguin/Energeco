@@ -27,6 +27,7 @@ export class MissionComponent implements OnInit {
     if (finalEnergy > 100){
       finalEnergy = 100;
       localStorage.setItem("debloque", "1");
+      localStorage.setItem("mystery", "0");
     }
     localStorage.setItem("energy", finalEnergy.toString());
 

@@ -193,3 +193,23 @@
   background-size: contain;
   background-position: center;
 }
+
+.mission .modal .box .btn-next2 {
+  height: 2em;
+  width: 30em;
+  text-align: center;
+  top: 80%;
+  left: 13em;
+  position: absolute;
+  background: url("assets/images/btn-red.png") no-repeat;
+  background-size: contain;
+  background-position: center;
+  padding-top: 1em;
+}
+
+.mission .modal .box .btn-next2:hover {
+  color: white;
+  background: url("assets/images/btn-red-hover.png") no-repeat;
+  background-size: contain;
+  background-position: center;
+}

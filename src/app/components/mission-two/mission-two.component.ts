@@ -25,7 +25,8 @@ export class MissionTwoComponent implements OnInit {
     var finalEnergy = Number(currentEnergy)+energy;
     if (finalEnergy > 100){
       finalEnergy = 100;
-      //localStorage.setItem("robot", "1");
+      localStorage.setItem("debloque", "1");
+      localStorage.setItem("mystery", "0");
     }
     localStorage.setItem("energy", finalEnergy.toString());
     document.getElementById("modal")!.style.display="block";
